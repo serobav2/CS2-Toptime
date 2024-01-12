@@ -1,4 +1,4 @@
-﻿using CounterStrikeSharp.API;
+using CounterStrikeSharp.API;
 using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
 using CounterStrikeSharp.API.Modules.Admin;
@@ -251,6 +251,7 @@ namespace ToptimeMostActive
             }
         }
 
+        [RequiresPermissions("@css/root")]
         [ConsoleCommand("toptimeyazdir")]
         public void OnToptimePrint(CCSPlayerController? player, CommandInfo command)
         {
@@ -309,6 +310,7 @@ namespace ToptimeMostActive
             }
         }
 
+        [RequiresPermissions("@css/root")]
         [ConsoleCommand("toptimegonder")]
         public async void OnToptimSend(CCSPlayerController? player, CommandInfo command)
         {
@@ -365,6 +367,7 @@ namespace ToptimeMostActive
             }
         }
 
+        [RequiresPermissions("@css/root")]
         [ConsoleCommand("toptime0")]
         public void OnToptimeClear(CCSPlayerController? player, CommandInfo command)
         {
